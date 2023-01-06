@@ -6,18 +6,21 @@ const films = [
   {
     name: 'Wandinha',
     platform: 'Netflix',
-    img: wandinha
+    img: wandinha,
+    description: "Uma noia que ta sempre de luta e é louca."
   },
   {
     name: 'Dr. House',
     platform: 'Prime Video',
-    img: drHouse
+    img: drHouse,
+    description: "Um noia drogado que fica curando o povo por ai."
   },
   {
     name: 'How To Train Your Dragon',
     platform: 'Netflix',
-    img: howToTrainYourDragon
-  }
+    img: howToTrainYourDragon,
+    description: "Um noia que resolveu ter alguns gatinhos com asas de estimação."
+  },
 ];
 
 export default films;
