@@ -21,6 +21,11 @@ const films = [
     img: howToTrainYourDragon,
     description: "Um noia que resolveu ter alguns gatinhos com asas de estimação."
   },
+  {
+    name: 'brooklin 99',
+    platform: 'Netflix',
+    description: "Um grupo de noias caçando outros noias."
+  },
 ];
 
 export default films;

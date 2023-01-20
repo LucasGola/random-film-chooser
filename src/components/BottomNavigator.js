@@ -12,10 +12,10 @@ const Tab = createBottomTabNavigator();
 export default function BottomNavigator() {
   return <NavigationContainer>
     <Tab.Navigator>
-      <Tab.Screen name="All Films" component={AllFilms} />
       <Tab.Screen name="Home" component={InitialPage} />
       <Tab.Screen name="Chooser" component={FilmChooser} />
       <Tab.Screen name="Add Film" component={AddFilm} />
+      <Tab.Screen name="All Films" component={AllFilms} />
     </Tab.Navigator>
   </NavigationContainer>;
 }

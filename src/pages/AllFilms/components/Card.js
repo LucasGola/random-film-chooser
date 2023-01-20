@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {
   Text, View, StyleSheet, Dimensions, Image, TouchableOpacity, Modal, Button, StatusBar
 } from "react-native";
+import sadFace from '../../../../assets/sadFace.png';
 
 const { width } = Dimensions.get("window");
 
@@ -12,14 +13,14 @@ export default function Card({ img, name, platform, description, style }) {
 
   return (
     <TouchableOpacity style={[styles.card, style]} onPress={handleFilmFocused}>
-      <Image source={img} style={styles.img} />
+      {img ? <Image source={img} style={styles.img} /> : <Image source={sadFace} style={styles.img} />}
       <View style={styles.infos}>
         <Text style={styles.infosDescription}>{name}</Text>
         <Text style={styles.infosDescription}>{platform}</Text>
       </View>
       <Modal visible={isFilmFocused}>
         <View style={{ flex: 1 }}>
-          <Image source={img} style={styles.modalImg} />
+          {img ? <Image source={img} style={styles.modalImg} /> : <Image source={sadFace} style={styles.modalImg} />}
           <Text style={styles.modalTitle}>{name}</Text>
           <Text style={styles.modalDescription}>{description}</Text>
           <Text style={styles.modalPlatform}>Plataforma: {platform}</Text>
